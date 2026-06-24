@@ -10,9 +10,7 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html, body {
-      height: 100%;
-    }
+    html, body { height: 100%; }
 
     body {
       background: #0A0F1E;
@@ -36,19 +34,19 @@
     }
 
     .logo {
-      width: clamp(160px, 40vw, 260px);
+      width: clamp(180px, 44vw, 300px);
       height: auto;
       display: block;
-      margin-bottom: 36px;
+      margin-bottom: 40px;
     }
 
     .tagline {
       font-size: clamp(14px, 2.2vw, 17px);
       font-weight: 300;
-      color: rgba(255, 255, 255, 0.55);
-      letter-spacing: 0.02em;
+      color: rgba(255, 255, 255, 0.5);
+      letter-spacing: 0.03em;
       line-height: 1.6;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
     }
 
     .ventures {
@@ -56,34 +54,32 @@
       flex-wrap: wrap;
       gap: 10px;
       justify-content: center;
-      margin-bottom: 56px;
+      margin-bottom: 60px;
     }
 
     .pill {
       font-size: 11px;
       font-weight: 500;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.09em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.4);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 100px;
-      padding: 6px 16px;
+      padding: 6px 18px;
     }
 
     .contact {
-      font-size: 12px;
-      font-weight: 400;
-      color: rgba(255, 255, 255, 0.25);
-      text-decoration: none;
-      letter-spacing: 0.03em;
-      transition: color 0.2s ease;
       position: fixed;
       bottom: 28px;
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.22);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: color 0.2s ease;
     }
 
-    .contact:hover {
-      color: rgba(255, 255, 255, 0.5);
-    }
+    .contact:hover { color: rgba(255, 255, 255, 0.5); }
   </style>
 </head>
 <body>
