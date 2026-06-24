@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aeonwire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: #0A0F1E;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .splash {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 24px;
+      width: 100%;
+      max-width: 640px;
+    }
+
+    .logo {
+      width: clamp(160px, 40vw, 260px);
+      height: auto;
+      display: block;
+      margin-bottom: 36px;
+    }
+
+    .tagline {
+      font-size: clamp(14px, 2.2vw, 17px);
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.55);
+      letter-spacing: 0.02em;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .ventures {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 56px;
+    }
+
+    .pill {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 100px;
+      padding: 6px 16px;
+    }
+
+    .contact {
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.25);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: color 0.2s ease;
+      position: fixed;
+      bottom: 28px;
+    }
+
+    .contact:hover {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="splash">
+    <img src="assets/logo-svg.svg" alt="Aeonwire" class="logo">
+    <p class="tagline">Ventures in health, real estate, and technology</p>
+    <div class="ventures">
+      <span class="pill">Health For Florida</span>
+      <span class="pill">Aeonwire Realty</span>
+      <span class="pill">Blue Label Group</span>
+    </div>
+  </div>
+
+  <a class="contact" href="mailto:contact@aeonwire.com">contact@aeonwire.com</a>
+
+</body>
+</html>
